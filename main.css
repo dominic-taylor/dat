@@ -38,6 +38,7 @@ body{
   width: 250px;
 }
 .title{
+  margin-top: 15%;
   font-weight: 500;
 }
 .subtitle{
@@ -49,15 +50,14 @@ body{
 }
 
 #top {
-  width: 30%;
-
+  width: 50%;
   border-bottom: 2px solid #ffd9b3;
   margin: auto;
 }
 
 #bottom {
   height: 70%;
-  width: 30%;
+  width: 50%;
   margin: auto;
 }
 #navbutton{
@@ -68,9 +68,16 @@ body{
   margin-left: 10%;
   z-index: 2;
 }
+.projects{
+  text-align: left;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
 
 @media screen and (max-width: 750px) {
     #nav {padding-top: 15px;}
     #nav a {font-size: 18px;}
     #navbutton {margin-left: 75%;}
+    #bottom{width: 90%;}
 }
