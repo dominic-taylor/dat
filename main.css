@@ -1,0 +1,83 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #ccffff;
+}
+
+#nav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  background-color: yellow;
+  overflow-x: hidden;
+  transition: 0.7s;
+}
+#nav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  color: black;
+  transition: 0.3s;
+}
+#nav a:hover, a:focus {
+  color: #00BCD4;
+}
+.contactcard{
+  border: 2px solid #ffd9b3;;
+}
+.contactcard ul{
+  padding: 0;
+  list-style: none;
+}
+.closed{
+  width: 0;
+}
+.expanded{
+  width: 250px;
+}
+.title{
+  margin-top: 15%;
+  font-weight: 500;
+}
+.subtitle{
+  font-weight: 300;
+  color: grey;
+}
+#content {
+  text-align: center;
+}
+
+#top {
+  width: 50%;
+  border-bottom: 2px solid #ffd9b3;
+  margin: auto;
+}
+
+#bottom {
+  height: 70%;
+  width: 50%;
+  margin: auto;
+}
+#navbutton{
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-left: 10%;
+  z-index: 2;
+}
+.projects{
+  text-align: left;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+    #nav {padding-top: 15px;}
+    #nav a {font-size: 18px;}
+    #navbutton {margin-left: 75%;}
+    #bottom{width: 90%;}
+}
