@@ -4,46 +4,94 @@ body{
 }
 
 #nav {
-  height: 100%;
+  display: flex;
+  text-align: justify;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  padding-top: 60px;
   background-color: yellow;
-  overflow-x: hidden;
   transition: 0.7s;
 }
-#nav a{
+#nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   color: black;
   transition: 0.3s;
+}
+#links{
+  width: 50%;
+  position: relative;
+  display: block;
+}
+#navcontact{
+  text-align: right;
+  width: 50%;
+  position: relative;
+  display: block;
 }
 #nav a:hover, a:focus {
   color: #00BCD4;
 }
 .contactcard{
-  border: 2px solid #ffd9b3;;
+  margin: 4%;
+  border: 2px solid #ffd9b3;
 }
 .contactcard ul{
   padding: 0;
   list-style: none;
 }
 .closed{
-  width: 0;
+  overflow: hidden;
+  max-height: 0;
 }
 .expanded{
-  width: 250px;
+  /*make this the height of the largest projectdesc
+  or accept spaces in other projectdesc*/
+
+  max-height: 350px;
+
 }
 .title{
-  margin-top: 15%;
+  margin-top: 10%;
   font-weight: 500;
 }
 .subtitle{
   font-weight: 300;
   color: grey;
+}
+.projects{
+  display: block;
+  text-align: left;
+  padding: 0;
+  list-style: none;
+}
+.projectcard{
+  display: block;
+  width: 100%
+}
+.projectheader{
+  position: relative;
+  display: flex;
+  width: 100%
+}
+.projecttitle{
+  position: relative;
+  display: block;
+  width: 80%;
+}
+.projectimage{
+  position: relative;
+  display: block;
+}
+.projectdesc{
+  width: 100%;
+  z-index: 1;
+  background-color: yellow;
+  overflow: hidden;
+  transition: 0.7s;
 }
 #content {
   text-align: center;
@@ -68,12 +116,7 @@ body{
   margin-left: 10%;
   z-index: 2;
 }
-.projects{
-  text-align: left;
-  padding: 0;
-  list-style: none;
-  display: block;
-}
+
 
 @media screen and (max-width: 750px) {
     #nav {padding-top: 15px;}
