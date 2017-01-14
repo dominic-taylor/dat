@@ -1,18 +1,21 @@
-document.getElementById('navbutton').addEventListener('click', slideNav, false)
-document.getElementById('nav').addEventListener('click', slideNav, false)
+var projectDetails = document.getElementsByClassName('more')
 
-function slideNav() {
- var nav = document.getElementById('navbutton')
-  var el = document.getElementById('nav')
-  if(el.classList.contains('closed')){
-    el.classList.add('expanded')
-    el.classList.remove('closed')
-    nav.innerHTML = 'X'
+for (var i = 0; i < projectDetails.length; i++) {
+  projectDetails[i].addEventListener('click', openDescription, false)
+
+}
+
+function openDescription(e) {
+  var projectDesc = e.target.nextElementSibling
+
+  if(projectDesc.classList.contains('closed')){
+    projectDesc.classList.add('expanded')
+    projectDesc.classList.remove('closed')
+    e.target.innerHTML = 'Less'
   }
   else {
-    el.classList.add('closed')
-    el.classList.remove('expanded')
-    nav.innerHTML = '?'
-
+    projectDesc.classList.add('closed')
+    projectDesc.classList.remove('expanded')
+    e.target.innerHTML = 'More...'
   }
 }

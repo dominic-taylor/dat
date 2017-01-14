@@ -6,35 +6,104 @@
   <link rel='stylesheet' href="main.css">
 </head>
 <body>
-    <div id='nav' class='closed'>
-      <a href='#'>Home</a>
-      <a href='#'>My Work</a>
-      <a href='#'>Contact</a>
-      <a href='#'>About</a>
-      <ul id='navcontact'>
-        <li>email</li>
-        <li>github</li>
-        <li>linkedin</li>
-      </ul>
+    <div id='nav'>
+      <div id='links'>
+        <a href='#'>Home</a>
+        <a href='#'>My Work</a>
+        <a href='#'>Contact</a>
+        <a href='#'>About</a>
+      </div>
+      <div id='navcontact'>
+        <a href='#'>email</a>
+        <a href='#'>github</a>
+        <a href='#'>Linkedin</a>
+      </div>
     </div>
-    <div id='navbutton'>?</div>
     <div id='content'>
       <div id='top'>
-        <h1 class='title'>Title</h1>
+        <h1 class='title'>Work</h1>
         <h2 class='subtitle'>Subtitle</h2>
       </div>
       <div id='bottom'>
-        <h3>Projects</h3>
         <ul class='projects'>
           <li>
-            <h4>Digital Profile Project</h4>
-            <p>I was contracted as an assistant to a research project at Victoria University of Wellington, looking    into how people use technology.
-             My role was to take the raw data, stored on Google Sheets, and create a visualsation based on it. I also had to make a solution that would be easily useable by members of the project once my contract ended.
-             To achieve this I wrote a Node.js program that stripped the data from three .tsv (tab-seperated-value) files and wrote it to a JSON-like file (more on that later), fit for the type of D3.js graph we had decided to use. This meant a user could replace any of the .tsv files if new information was added and run the program to get a new graph. The graph has about 560 data points, belonging to categories and sub categories, which are ultimatley connected to a central node. I added functionality so users could mouse over the points for more information on the data and relationships between categories. </p></li>
-             <h4>Digital Profile Project</h4>
-             <p>I was contracted as an assistant to a research project at Victoria University of Wellington, looking    into how people use technology.
-                My role was to take the raw data, stored on Google Sheets, and create a visualsation based on it. I also had to make a solution that would be easily useable by members of the project once my contract ended.
-                This involved formatting the </p></li>
+            <div class='projectcard'>
+              <div class='projectheader'>
+                <div class='projecttitle'>
+                  <h4>Digital Profile Project</h4>
+                  <h4>Git: https://github.com/digital-profile </h4>
+                  <h4>Link: digital-profile.github.io</h4>
+                </div>
+                <div class='projectimage'>
+                  <img src="http://placekitten.com/350/150">
+                </div>
+              </div>
+              <div class='more'>More...</div>
+              <div class='projectdesc closed'>
+                <p>I was contracted as an assistant to a research project at Victoria University of Wellington, looking into how people use technology.
+                 My job was to take the raw data, stored on Google Sheets and create a visualsation based on it. The solution also had to be easily useable by members of the project once my contract ended.</p>
+                 <p>As Sheets can be downloaded as tab-separated value (.tsv ) files, I wrote a Node.js program that stripped and formatted the data based on this delimiter and loaded it into a prepared D3.js graph. So when new information is added, a user replaces the relevant .tsv files and runs the program to get a new graph. </p>
+                 <p>The idea of the visualsation was to give context to hundreds of data points, categories and sub categories. I added functionality so users could mouse over the points for more information and relationships between categories, as well as select data points which could be downloaded as a text file.</p>
+             </div>
+           </div>
+          </li>
+          <li>
+            <div class='projectcard'>
+              <div class='projectheader'>
+                <div class='projecttitle'>
+                  <h4>Trails</h4>
+                  <h4>Git</h4>
+                  <h4>Link</h4>
+                </div>
+                <div class='projectimage'>
+                  <img src="http://www.placecage.com/350/150">
+                </div>
+              </div>
+              <div class='more'>More...</div>
+              <div class='projectdesc closed'>
+               <p>My final project at EDA was a web app that led users on a trail of Wellington landmarks. This was a group project and my main role was coding functions that compared the user’s geo-coordinates to those in our database. I did this by reading the documentation on the JavaScript geolocation API, and writing tests for my functions based on how we wanted to use it. I also built React components and integrated an OAuth login feature which let users to have their Facebook name and profile picture added to a leader board.</p>
+               <p>
+                My team and I built Trails over a week of 12 hour days and we used Agile to pace ourselves and be effective. In my role as ‘Time Catcher’ I was responsible for monitoring our task schedule as well as holding stand-ups to see how everyone was feeling and handling the work- load. This ensured good communication and culture, making new features easier to add and a smoother workflow. </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class='projectcard'>
+              <div class='projectheader'>
+                <div class='projecttitle'>
+                  <h4>SpinVision</h4>
+                  <h4>Git</h4>
+                  <h4>Link</h4>
+                </div>
+                <div class='projectimage'>
+                  <img src="http://www.fillmurray.com/350/150">
+                </div>
+              </div>
+              <div class='more'>More...</div>
+              <div class='projectdesc closed'>
+              <p>A friend and I did this project in order to get a handle on Redux. SpinVision grabs a dozen(?) results from a film database API and displays them in a nice grid as a poster and summary. A user can specify a genre and year or let it be completely random.
+                What were the challenges? The concept of Redux is nice and elegant but the implementation and docs are pretty obtuse. How did we overcome them? Ultimaly it was a challenge of problem solving, so I copied the most simple example I could find and followed the data step by step through the app until I understood how Redux worked and could use it in our project.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class='projectcard'>
+              <div class='projectheader'>
+                <div class='projecttitle'>
+                  <h4>Todom</h4>
+                  <h4>Git</h4>
+                  <h4>Link</h4>
+                </div>
+                <div class='projectimage'>
+                  <img src="http://placehold.it/350x150">
+                </div>
+              </div>
+              <div class='more'>More...</div>
+              <div class='projectdesc closed'>
+               <p>This was the first project I did after graduating from Ensprial. </p>
+              </div>
+            </div>
+          </li>
         </ul>
         <div class="contactcard">
           <ul>
