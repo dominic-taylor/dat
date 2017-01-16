@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #ccffff;
@@ -70,21 +73,28 @@ body{
 }
 .projectcard{
   display: block;
-  width: 100%
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+}
+.projectcard:hover{
+  border: 1px solid gray;
+  box-shadow: 0px 1px 2px 0px;
 }
 .projectheader{
-  position: relative;
   display: flex;
+  position: relative;
   width: 100%
 }
 .projecttitle{
-  position: relative;
   display: block;
+  position: relative;
   width: 80%;
 }
 .projectimage{
-  position: relative;
   display: block;
+  position: relative;
+  margin-top: auto;
 }
 .projectdesc{
   width: 100%;
