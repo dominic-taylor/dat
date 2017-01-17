@@ -41,11 +41,12 @@ img{
 #nav a:hover, a:focus {
   color: #00BCD4;
 }
-.contactcard{
+#contactcard{
+  list-style: none;
   margin: 4%;
   border: 2px solid #ffd9b3;
 }
-.contactcard ul{
+#contactcard ul{
   padding: 0;
   list-style: none;
 }
