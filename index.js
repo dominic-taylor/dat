@@ -31,11 +31,11 @@ function openDescription(e) {
   if(projectDesc.classList.contains('closed')){
     projectDesc.classList.add('expanded')
     projectDesc.classList.remove('closed')
-    listening.querySelector('.more').innerHTML = ''
+    // listening.querySelector('.more').innerHTML = ''
   }
   else {
     projectDesc.classList.add('closed')
     projectDesc.classList.remove('expanded')
-    listening.querySelector('.more').innerHTML = 'More..'
+    // listening.querySelector('.more').innerHTML = 'More..'
   }
 }

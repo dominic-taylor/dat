@@ -151,8 +151,7 @@ display: inline;
 @media screen and (min-width: 800px) {
     .nav {height: auto; position: fixed;}
     .nav a {  display: inline-block;}
-    /*#navbutton {margin-left: 75%;}*/
-    img{height: 150px; width: 150px;}
-    #content{width: 50%;}
     #arrow{display: none;}
+    img{height: 150px; width: 150px;}
+    #content{width: 70%;}
 }
