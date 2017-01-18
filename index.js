@@ -1,3 +1,21 @@
+
+var nav = document.getElementsByClassName('nav')
+document.getElementById('content').addEventListener('click', toggleNav, false)
+
+function toggleNav(e) {
+  console.log(e.target.id);
+
+  if(e.target.id == 'arrow'){
+    nav[0].classList.add('navdown')
+  }
+  else {
+      nav[0].classList.remove('navdown')
+    }
+
+}
+
+
+
 var projectCards = document.getElementsByClassName('projectcard')
 
 for (var i = 0; i < projectCards.length; i++) {
@@ -9,7 +27,6 @@ function openDescription(e) {
   var listening = this
   var clicked = e.target.className
   var projectDesc = this.querySelector('.projectdesc')
-  console.log(listening + ' AND '+projectDesc);
 
   if(projectDesc.classList.contains('closed')){
     projectDesc.classList.add('expanded')
