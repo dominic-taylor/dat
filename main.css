@@ -9,7 +9,6 @@ body{
 img{
   height: 100px;
   width: 100px;
-
 }
 
 .nav {
@@ -26,7 +25,7 @@ img{
   border-bottom: 4px solid yellow;
   transition: 0.7s;
 }
-.nav a {
+.nav a  {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   display: block;
@@ -48,6 +47,7 @@ img{
   color: #00BCD4;
 }
 #contactcard{
+  text-decoration: none;
   list-style: none;
   margin: 4%;
   border: 2px solid #ffd9b3;
@@ -56,6 +56,11 @@ img{
   padding: 0;
   list-style: none;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .closed{
   overflow: hidden;
   max-height: 0;
@@ -63,9 +68,7 @@ img{
 .expanded{
   /*make this the height of the largest projectdesc
   or accept spaces in other projectdesc*/
-
   max-height: 750px;
-
 }
 .navdown {
   height: 140px;
@@ -122,9 +125,9 @@ img{
   width: 0;
   height: 0;
   margin: auto;
-  margin-top: -12px;
+  margin-top: -20px;
   border-style: solid;
-  border-width: 30px 30px 0 30px;
+  border-width: 40px 40px 0 40px;
   border-color: yellow transparent transparent transparent;
 }
 #content {
@@ -146,9 +149,7 @@ img{
 }
 #navbutton{
 display: inline;
-
 }
-
 
 @media screen and (min-width: 800px) {
     .nav {height: auto; position: fixed;}
