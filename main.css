@@ -43,7 +43,7 @@ img{
   position: relative;
   display: block;
 }
-.nav a:hover a:focus {
+a:hover, a:focus {
   color: #00BCD4;
 }
 #contactcard{
