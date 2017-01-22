@@ -12,11 +12,14 @@ img{
   height: 100px;
   width: 100px;
 }
-
+ul{
+  margin: 0;
+  padding: 0;
+}
 .nav {
   display: flex;
   text-align: justify;
-  height: 0;
+  height: 30px;
   width: 100%;
   position: fixed;
   overflow: hidden;
@@ -25,10 +28,7 @@ img{
   left: 0;
   background-color: yellow;
   background-color: #FFEF10;
-
-  /*alt color #FFEF10*/
-  border-bottom: 4px solid yellow;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 .nav a  {
   padding: 8px 8px 8px 32px;
@@ -37,17 +37,25 @@ img{
   color: black;
   transition: 0.3s;
 }
+#icon {
+  padding: 8px 32px 8px 8px;
+  display: inline-block;
+}
 #links{
+  display:block;
   width: 50%;
   position: relative;
-  display: block;
+  list-style: none;
 }
 #navcontact{
+  display:block;
   text-align: right;
-  width: 50%;
-  position: relative;
-  display: block;
+  width: auto;
+  position: absolute;
+  right: 0;
+  list-style: none;
 }
+
 a:hover, a:focus {
   color: #00BCD4;
 }
@@ -65,12 +73,9 @@ a{
   text-decoration: none;
   color: black;
 }
-/*p{
-  color: #fff;
-}*/
 .closed{
   overflow: hidden;
-  max-height: 0;
+  max-height: 10px;
 }
 .expanded{
   /*make this the height of the largest projectdesc
@@ -81,7 +86,7 @@ a{
   height: 140px;
 }
 .title{
-  margin-top: 10%;
+  margin-top: 18%;
   font-weight: 500;
 }
 .subtitle{
@@ -99,11 +104,8 @@ a{
   width: 100%;
   padding: 10px;
   background-color: #FFEF10;
-    border-bottom: 2px solid #76C6FE;
+  border-bottom: 2px solid #76C6FE;
 }
-/*.projectcard:hover{
-  border: 1px solid gray;
-}*/
 .projectheader{
   display: flex;
   position: relative;
@@ -127,22 +129,10 @@ a{
   overflow: hidden;
   transition: 0.7s;
 }
-
-#arrow{
-  width: 0;
-  height: 0;
-  margin: auto;
-  margin-top: -20px;
-  border-style: solid;
-  border-width: 40px 40px 0 40px;
-  border-color: yellow transparent transparent transparent;
-}
 #content {
   margin: auto;
   text-align: center;
 }
-
-
 #top {
   width: 100%;
   border-bottom: 2px solid #ffd9b3;
@@ -154,14 +144,9 @@ a{
   width: 100%;
   margin: auto;
 }
-#navbutton{
-display: inline;
-}
-
 @media screen and (min-width: 800px) {
+    #icon {display: none;}
     .nav {height: auto; position: fixed;}
-    .nav a {  display: inline-block;}
-    #arrow{display: none;}
-    img{height: 150px; width: 150px;}
+    #navcontact, #links{ display: flex;}
     #content{width: 70%;}
 }

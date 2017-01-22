@@ -1,12 +1,18 @@
 
 var nav = document.getElementsByClassName('nav')
-document.getElementById('content').addEventListener('click', toggleNav, false)
+var icon = document.getElementById('icon')
+icon.addEventListener('click', toggleNav, false)
 
 function toggleNav(e) {
-  if(e.target.id == 'arrow'){
-    nav[0].classList.add('navdown')
-  } else {
+  console.log(e.target);
+  console.log('ass');
+  if(nav[0].classList.contains('navdown')){
     nav[0].classList.remove('navdown')
+    icon.innerHTML = '&#9776'
+  } else {
+    nav[0].classList.add('navdown')
+    icon.innerHTML = '&times'
+
   }
 }
 
