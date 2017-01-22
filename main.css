@@ -100,12 +100,12 @@ a{
   margin: 5px;
   padding: 10px;
   background-color: #fff;
-
+ background-color: #FFEF10;
 }
-.projectcard:hover{
+/*.projectcard:hover{
   border: 1px solid gray;
   box-shadow: 0px 1px 2px 0px;
-}
+}*/
 .projectheader{
   display: flex;
   position: relative;
