@@ -97,14 +97,12 @@ a{
 .projectcard{
   display: block;
   width: 100%;
-  margin: 5px;
   padding: 10px;
-  background-color: #fff;
- background-color: #FFEF10;
+  background-color: #FFEF10;
+    border-bottom: 2px solid #76C6FE;
 }
 /*.projectcard:hover{
   border: 1px solid gray;
-  box-shadow: 0px 1px 2px 0px;
 }*/
 .projectheader{
   display: flex;
@@ -142,7 +140,6 @@ a{
 #content {
   margin: auto;
   text-align: center;
-  padding: 3%;
 }
 
 
