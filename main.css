@@ -3,15 +3,13 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: #ccffff;
-  background-color: #76C6FE;
-  /*alt colour #76C6FE*/
   margin: 0;
 }
 img{
   height: 100px;
   width: 100px;
 }
+
 ul{
   margin: 0;
   padding: 0;
@@ -26,8 +24,7 @@ ul{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: yellow;
-  background-color: #FFEF10;
+ /* background-color*/: #FFEF10;
   transition: 0.5s;
 }
 .nav a  {
@@ -57,13 +54,13 @@ ul{
 }
 
 a:hover, a:focus {
-  color: #00BCD4;
+  color: #F46B23;
 }
 #contactcard{
   text-decoration: none;
   list-style: none;
-  margin: 4%;
-  border: 2px solid #ffd9b3;
+  margin: 4% 0 4% 0;
+  /*border: 2px solid #F46B23;*/
 }
 #contactcard ul{
   padding: 0;
@@ -86,7 +83,6 @@ a{
   height: 140px;
 }
 .title{
-  margin-top: 18%;
   font-weight: 500;
 }
 .subtitle{
@@ -103,8 +99,8 @@ a{
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #FFEF10;
-  border-bottom: 2px solid #76C6FE;
+ /* background-color*/: #FFEF10;
+  border-bottom: 1px solid #000000;
 }
 .projectheader{
   display: flex;
@@ -127,15 +123,18 @@ a{
   width: 100%;
   z-index: 1;
   overflow: hidden;
+  padding: 5px;
   transition: 0.7s;
 }
 #content {
+  width: 90%;
   margin: auto;
-  text-align: center;
-}
+  margin-top: 80px;
+/*  text-align: center;
+*/}
 #top {
   width: 100%;
-  border-bottom: 2px solid #ffd9b3;
+  /*border-bottom: 2px solid #F46B23;*/
   margin: auto;
 }
 
@@ -148,5 +147,5 @@ a{
     #icon {display: none;}
     .nav {height: auto; position: fixed;}
     #navcontact, #links{ display: flex;}
-    #content{width: 70%;}
+    #content{ max-width: 500px;}
 }
