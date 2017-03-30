@@ -4,8 +4,6 @@ var icon = document.getElementById('icon')
 icon.addEventListener('click', toggleNav, false)
 
 function toggleNav(e) {
-  console.log(e.target);
-  console.log('ass');
   if(nav[0].classList.contains('navdown')){
     nav[0].classList.remove('navdown')
     icon.innerHTML = '&#9776'

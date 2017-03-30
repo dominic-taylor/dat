@@ -1,40 +1,57 @@
 * {
     box-sizing: border-box;
+      margin: 0;
+  padding: 0;
 }
 body{
+  overflow: auto;
   font-family: 'Roboto', sans-serif;
-  margin: 0;
+
 }
 img{
   height: 100px;
   width: 100px;
 }
 
-ul{
+ul{ 
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 .nav {
   display: flex;
   text-align: justify;
-  height: 30px;
+  height: 45px;
   width: 100%;
   position: fixed;
   overflow: hidden;
   z-index: 1;
   top: 0;
   left: 0;
- /* background-color*/: #FFEF10;
+  background: violet;
+  background: salmon;
+  background: lightgreen;
+  background: cornflowerblue;
   transition: 0.5s;
 }
 .nav a  {
+  font-size: 16px;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   display: block;
   color: black;
   transition: 0.3s;
 }
+.nav a:hover, a:focus {
+  background-color: #F46B23;
+}
 #icon {
+  display:block;
+  text-align: right;
+  width: auto;
+  position: absolute;
+  right: 0;
+  list-style: none;
   padding: 8px 32px 8px 8px;
   display: inline-block;
 }
@@ -44,18 +61,13 @@ ul{
   position: relative;
   list-style: none;
 }
-#navcontact{
-  display:block;
-  text-align: right;
-  width: auto;
-  position: absolute;
-  right: 0;
-  list-style: none;
+.footer{
+  overflow: hidden;
+  background-color: lightblue;
+  width: 100%;
 }
 
-a:hover, a:focus {
-  color: #F46B23;
-}
+
 #contactcard{
   text-decoration: none;
   list-style: none;
@@ -66,10 +78,11 @@ a:hover, a:focus {
   padding: 0;
   list-style: none;
 }
-a{
+a{ 
   text-decoration: none;
   color: black;
 }
+
 .closed{
   overflow: hidden;
   max-height: 10px;
@@ -80,10 +93,12 @@ a{
   max-height: 750px;
 }
 .navdown {
-  height: 140px;
+  height: 122px;
 }
 .title{
+  font-size: 60px;
   font-weight: 500;
+  line-height: 82px;
 }
 .subtitle{
   font-weight: 300;
@@ -99,7 +114,7 @@ a{
   display: block;
   width: 100%;
   padding: 10px;
- /* background-color*/: #FFEF10;
+ /* background-color: #FFEF10;*/
   border-bottom: 1px solid #000000;
 }
 .projectheader{
@@ -130,17 +145,24 @@ a{
   width: 90%;
   margin: auto;
   margin-top: 80px;
-/*  text-align: center;
-*/}
+  min-height: 500px;}
 #top {
+ height: auto;
   width: 100%;
-  /*border-bottom: 2px solid #F46B23;*/
   margin: auto;
 }
-
+#navcontact{
+  display:block;
+  text-align: right;
+  width: auto;
+  position: absolute;
+  right: 0;
+  list-style: none;
+}
 #bottom {
-  height: 70%;
+  /*height: 70%;*/
   width: 100%;
+  font-size: 18px;
   margin: auto;
 }
 @media screen and (min-width: 800px) {
@@ -148,4 +170,9 @@ a{
     .nav {height: auto; position: fixed;}
     #navcontact, #links{ display: flex;}
     #content{ max-width: 500px;}
+    #top{text-align: center;}
 }
+/*  background: violet;
+  background: salmon;
+  background: lightgreen;
+  background: cornflowerblue;*/
