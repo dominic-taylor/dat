@@ -14,6 +14,7 @@ function toggleNav(e) {
   }
 }
 
+
 var projectCards = document.getElementsByClassName('projectcard')
 
 for (var i = 0; i < projectCards.length; i++) {
