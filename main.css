@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
-      margin: 0;
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 body{
@@ -8,11 +8,10 @@ body{
   font-family: 'Roboto', sans-serif;
 
 }
-img{
-  height: 100px;
-  width: 100px;
+a{ 
+  text-decoration: none;
+  color: black;
 }
-
 ul{ 
   list-style: none;
   margin: 0;
@@ -34,32 +33,44 @@ ul{
   background: cornflowerblue;
   transition: 0.5s;
 }
-.nav a  {
-  font-size: 16px;
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  display: block;
-  color: black;
-  transition: 0.3s;
-}
-.nav a:hover, a:focus {
-  background-color: #F46B23;
-}
-#icon {
+.navlist{
   display:block;
-/*  text-align: right;
-*/  width: 35%;
-  /*position: absolute;*/
-  /*right: 0;*/
-  list-style: none;
-  padding: 12px 32px;
-}
-#links{
-  display:block;
+  margin: auto; 
   width: 50%;
   position: relative;
   list-style: none;
 }
+.navlinks {
+  display: inline-block;
+  height: 60px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+/*  padding: 12px 8px 8px 8px;*/
+  padding: 18px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.social{
+  height: 30px;
+  width: 30px;
+}
+.pagelinks{
+  padding: 16px;
+}
+.visible{
+  opacity: 1;
+}
+.nav li:hover, li:focus {
+  background-color: #F46B23;
+}
+#menu {
+  display:block;
+  /*width: 35%;*/
+  list-style: none;
+  padding: 12px 32px;
+}
+
 .footer{
   overflow: hidden;
   background-color: lightblue;
@@ -67,20 +78,6 @@ ul{
 }
 
 
-#contactcard{
-  text-decoration: none;
-  list-style: none;
-  margin: 4% 0 4% 0;
-  /*border: 2px solid #F46B23;*/
-}
-#contactcard ul{
-  padding: 0;
-  list-style: none;
-}
-a{ 
-  text-decoration: none;
-  color: black;
-}
 
 .closed{
   overflow: hidden;
@@ -92,7 +89,7 @@ a{
   max-height: 750px;
 }
 .navdown {
-  height: 122px;
+  height: 170px;
 }
 .title{
   font-size: 60px;
@@ -150,6 +147,12 @@ a{
   width: 100%;
   margin: auto;
 }
+#bottom {
+  /*height: 70%;*/
+  width: 100%;
+  font-size: 18px;
+  margin: auto;
+}
 #navcontact{
   display:block;
   text-align: right;
@@ -158,16 +161,12 @@ a{
   right: 0;
   list-style: none;
 }
-#bottom {
-  /*height: 70%;*/
-  width: 100%;
-  font-size: 18px;
-  margin: auto;
-}
+
 @media screen and (min-width: 800px) {
-    #icon {display: none;}
+    #menu {display: none;}
     .nav {height: auto; position: fixed;}
-    #navcontact, #links{ display: flex;}
+    .navlist{ display: flex; max-width: 150px;}
+    .navlinks{opacity: 1;}
     #content{ max-width: 500px;}
     #top{text-align: center;}
 }
