@@ -2,26 +2,29 @@
 <html>
 <head>
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content='width=device-width, initial-scale=1' name='viewport'>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>Dominic Taylor | Developer</title>
-
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">	<link href="main.css" rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
 </head>
 <body>
 	<div class='nav'>
-		<ul id='links'>
-			<li><a href='./index.html'>Home</a> <li><a href='./projects.html'>Projects</a> <li><a href='#contactcard'>Contact</a> <li><a href='./about.html'>About</a>
-		</ul>
-		<ul id='navcontact'>
-			<div id='icon'>&#9776</div>
-			<li><a href='mailto:dataylorx@gmail.com'>email</a> <li><a href='https://github.com/dominic-taylor' target='_blank'>github</a> <li><a href='https://nz.linkedin.com/in/dominic-taylor' target='_blank'>Linkedin</a>
+		<div id='menu'>&#9776</div>
+		<ul class='navlist'>
+			<li><a class='navlinks' href='./index.html'>Home</a> 
+			<li><a class='navlinks' href='./projects.html'>Projects</a> 
+			<li><a class='navlinks' href='./about.html'>About</a>
+		</ul>	
+		<ul class='navlist'>
+			<li><a class='navlinks' href='mailto:dataylorx@gmail.com'><img class='social' src="./assets/fi-mail.svg"></a> 
+			<li><a class='navlinks' href='https://github.com/dominic-taylor' target='_blank'><img class='social' src="./assets/fi-social-github.svg"></a> 
+			<li><a class='navlinks' href='https://nz.linkedin.com/in/dominic-taylor' target='_blank'><img class='social' src="./assets/fi-social-linkedin.svg"></a>
 		</ul>
 	</div>
 	<div id="content">
-    <div id='arrow'></div>
 		<div id='top'>
-			<h2 class='subtitle'>Projects</h2>
+			<h1 class='title'>Projects</h1>
 		</div>
 		<div id='bottom'>
 			<ul class='projects'>
@@ -31,7 +34,7 @@
 							<h4 class='projecttitle'>Trails</h4>
 							<!-- <div class='projectimage'><img src="./assets/trails.png"></div> -->
 						</div>
-						<div class='projectdesc closed'>
+						<div class='projectdesc'>
 							<p class='subtitle'><a href='https://github.com/danieldelacruz01/trails' target='_blank'>Git</a></p>
 							<p class='subtitle'><a href=' https://trails-app.herokuapp.com/' target='_blank'>Link</a></p>
 							<p class='subtitle'>React, Node, Facebook API, Navigator web API. HTML & CSS</p>
@@ -45,7 +48,7 @@
 							<h4 class='projecttitle'>SpinVision</h4>
 							<!-- <div class='projectimage'><img src="./assets/spinvision.png"></div> -->
 						</div>
-						<div class='projectdesc closed'>
+						<div class='projectdesc'>
 							<p class='subtitle'><a href='https://github.com/dominic-taylor/spinvision' target='_blank'>Git</a></p>
 							<p class='subtitle'><a href='https://spinvision.herokuapp.com/' target='_blank'>Link</a></p>
 							<p class='subtitle'>React, Redux, Node, HTML & CSS.</p>
@@ -60,7 +63,7 @@
 							<h4 class='projecttitle'>Todom</h4>
 							<!-- <div class='projectimage'><img src="./assets/todo.png"></div> -->
 						</div>
-						<div class='projectdesc closed'>
+						<div class='projectdesc'>
 							<p class='subtitle'><a href='https://github.com/dominic-taylor/todom' target='_blank'>Git</a></p>
 							<p class='subtitle'><a href='http://mytodom.heroku.com' target='_blank'>Link</a></p>
 							<p class='subtitle'>JavaScript, Node, bcrpyt, PostgreSQL, HTML & CSS.</p>
@@ -69,13 +72,6 @@
 					</div>
 				</li>
 			</ul>
-			<div id="contactcard">
-				<ul>
-					<li><a href='mailto:dataylorx@gmail.com'>email:dataylor.x@gmail.com</a></li>
-					<li><a href='https://github.com/dominic-taylor' target='_blank'>github</a></li>
-					<li><a href='https://nz.linkedin.com/in/dominic-taylor' target='_blank'>Linkedin</a></li>
-				</ul>
-			</div>
 		</div>
 	</div>
 	<script src='index.js'>

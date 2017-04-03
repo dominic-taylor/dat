@@ -1,21 +1,35 @@
 
 var nav = document.getElementsByClassName('nav')
-var icon = document.getElementById('icon')
-icon.addEventListener('click', toggleNav, false)
+
+var menu = document.getElementById('menu')
+var navLinks = document.getElementsByClassName('navlinks')
+
+menu.addEventListener('click', toggleNav, false)
+
+// Have menu icon display none when responsive menu is down.
+// so that only links take up nav. Make so if user taps on 
+// anything but a link nav bar will go up. 
 
 function toggleNav(e) {
-  console.log(e.target);
-  console.log('ass');
-  if(nav[0].classList.contains('navdown')){
-    nav[0].classList.remove('navdown')
-    icon.innerHTML = '&#9776'
-  } else {
-    nav[0].classList.add('navdown')
-    icon.innerHTML = '&times'
+  console.log(navLinks)
 
+ if(nav[0].classList.contains('navdown')){
+    nav[0].classList.remove('navdown')
+    menu.innerHTML = '&#9776'
+    for (var i = 0; i<navLinks.length; i++) {
+      navLinks[i].classList.remove('visible')
+    }
+  }else {
+    nav[0].classList.add('navdown')
+    menu.innerHTML = '&times'
+    for (var i = 0; i<navLinks.length; i++) {
+      navLinks[i].classList.add('visible')
+    }
   }
 }
 
+// Have proejct cards always be open. 
+// Have essentially this add/remove display none on menu items so nav bar is empty (apart from menu) when not down.
 var projectCards = document.getElementsByClassName('projectcard')
 
 for (var i = 0; i < projectCards.length; i++) {
