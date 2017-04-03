@@ -46,8 +46,8 @@ ul{
   text-decoration: none;
   color: black;
   font-size: 20px;
-/*  padding: 12px 8px 8px 8px;*/
-  padding: 18px;
+  padding: 12px 8px 8px 8px;
+  /*padding: 18px;*/
   opacity: 0;
   transition: 0.3s;
 }
@@ -70,14 +70,6 @@ ul{
   list-style: none;
   padding: 12px 32px;
 }
-
-.footer{
-  overflow: hidden;
-  background-color: lightblue;
-  width: 100%;
-}
-
-
 
 .closed{
   overflow: hidden;
@@ -109,8 +101,7 @@ ul{
 .projectcard{
   display: block;
   width: 100%;
-  padding: 10px;
- /* background-color: #FFEF10;*/
+  /*padding: 10px;*/
   border-bottom: 1px solid #000000;
 }
 .projectheader{
@@ -153,24 +144,28 @@ ul{
   font-size: 18px;
   margin: auto;
 }
-#navcontact{
-  display:block;
-  text-align: right;
-  width: auto;
-  position: absolute;
-  right: 0;
-  list-style: none;
-}
 
 @media screen and (min-width: 800px) {
-    #menu {display: none;}
-    .nav {height: auto; position: fixed;}
-    .navlist{ display: flex; max-width: 150px;}
-    .navlinks{opacity: 1;}
-    #content{ max-width: 500px;}
-    #top{text-align: center;}
+    #menu {
+      display: none;
+    }
+    .nav {
+      height: auto; 
+      position: fixed;
+    }
+    .navlist{ 
+      display: flex; 
+      max-width: 150px;
+    }
+    .navlinks{
+      padding: 18px;
+      opacity: 1;
+    }
+    #content{ 
+      max-width: 500px;
+    }
+    #top{
+      text-align: center;
+    }
+
 }
-/*  background: violet;
-  background: salmon;
-  background: lightgreen;
-  background: cornflowerblue;*/

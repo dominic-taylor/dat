@@ -1,10 +1,14 @@
 
 var nav = document.getElementsByClassName('nav')
+
 var menu = document.getElementById('menu')
 var navLinks = document.getElementsByClassName('navlinks')
 
-console.log(menu)
 menu.addEventListener('click', toggleNav, false)
+
+// Have menu icon display none when responsive menu is down.
+// so that only links take up nav. Make so if user taps on 
+// anything but a link nav bar will go up. 
 
 function toggleNav(e) {
   console.log(navLinks)
