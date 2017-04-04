@@ -41,7 +41,7 @@ ul{
   list-style: none;
 }
 .navlinks {
-  display: inline-block;
+  display: none;
   height: 60px;
   text-decoration: none;
   color: black;
@@ -58,9 +58,10 @@ ul{
   padding: 16px;
 }
 .visible{
+  display: inline-block;
   opacity: 1;
 }
-.nav li:hover, li:focus {
+.nav a:hover, a:focus {
   background-color: #F46B23;
 }
 #menu {
@@ -72,8 +73,9 @@ ul{
   height: 170px;
 }
 .title{
+  font-family: 'Roboto Mono', monospace;
   text-align: center;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 500;
   line-height: 82px;
 }
@@ -147,14 +149,11 @@ ul{
       max-width: 150px;
     }
     .navlinks{
+      display: inline-block;
       padding: 18px;
       opacity: 1;
     }
     #content{ 
       max-width: 500px;
     }
-    #top{
-      text-align: center;
-    }
-
 }
