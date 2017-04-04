@@ -1,151 +1,160 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
+  overflow: auto;
   font-family: 'Roboto', sans-serif;
-  margin: 0;
 }
-img{
-  height: 100px;
-  width: 100px;
+a{ 
+  text-decoration: none;
+  color: black;
 }
-
-ul{
+ul{ 
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 .nav {
   display: flex;
   text-align: justify;
-  height: 30px;
+  height: 45px;
   width: 100%;
   position: fixed;
   overflow: hidden;
   z-index: 1;
   top: 0;
   left: 0;
- /* background-color*/: #FFEF10;
+  box-shadow: 0px 5px 15px 2px #888888;
+  background: violet;
+  background: salmon;
+  background: lightgreen;
+  background: cornflowerblue;
   transition: 0.5s;
 }
-.nav a  {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  display: block;
-  color: black;
-  transition: 0.3s;
-}
-#icon {
-  padding: 8px 32px 8px 8px;
-  display: inline-block;
-}
-#links{
+.navlist{
   display:block;
+  margin: auto; 
   width: 50%;
   position: relative;
   list-style: none;
 }
-#navcontact{
-  display:block;
-  text-align: right;
-  width: auto;
-  position: absolute;
-  right: 0;
-  list-style: none;
-}
-
-a:hover, a:focus {
-  color: #F46B23;
-}
-#contactcard{
-  text-decoration: none;
-  list-style: none;
-  margin: 4% 0 4% 0;
-  /*border: 2px solid #F46B23;*/
-}
-#contactcard ul{
-  padding: 0;
-  list-style: none;
-}
-a{
+.navlinks {
+  display: inline-block;
+  height: 60px;
   text-decoration: none;
   color: black;
+  font-size: 20px;
+  padding: 12px 8px 8px 8px;
+  opacity: 0;
+  transition: 0.3s;
 }
-.closed{
-  overflow: hidden;
-  max-height: 10px;
+.social{
+  height: 30px;
+  width: 30px;
 }
-.expanded{
-  /*make this the height of the largest projectdesc
-  or accept spaces in other projectdesc*/
-  max-height: 750px;
+.pagelinks{
+  padding: 16px;
+}
+.visible{
+  opacity: 1;
+}
+.nav li:hover, li:focus {
+  background-color: #F46B23;
+}
+#menu {
+  display:block;
+  list-style: none;
+  padding: 12px 32px;
 }
 .navdown {
-  height: 140px;
+  height: 170px;
 }
 .title{
+  text-align: center;
+  font-size: 60px;
   font-weight: 500;
+  line-height: 82px;
 }
 .subtitle{
   font-weight: 300;
   color: grey;
 }
-.projects{
+.projectlist{
   display: block;
   text-align: left;
   padding: 0;
   list-style: none;
 }
-.projectcard{
+.project{
   display: block;
   width: 100%;
-  padding: 10px;
- /* background-color*/: #FFEF10;
+  margin: 30px 5px;
   border-bottom: 1px solid #000000;
 }
-.projectheader{
-  display: flex;
-  position: relative;
+
+.project a:hover{
+  color: #F46B23;;
+}
+.projecthead{
   width: 100%;
-}
-.projecttitle{
-  display: block;
   position: relative;
-  width: 100%;
-  font-weight: 500;
-  text-align: center;
+  display: inline-block;
+
 }
-.projectimage{
-  display: block;
-  position: relative;
-  margin-top: auto;
+.projecthead h4{
+  display: inline;
+  width: 50%;
 }
-.projectdesc{
-  width: 100%;
-  z-index: 1;
-  overflow: hidden;
-  padding: 5px;
-  transition: 0.7s;
+.projecthead img{
+  float: right;
+  width: 25px;
+  height: 25px;
+  right: 0;
 }
+.projectdesc, .projectdesc p{
+  padding: 10px 0;
+}
+
 #content {
   width: 90%;
   margin: auto;
   margin-top: 80px;
-/*  text-align: center;
-*/}
+  min-height: 500px;
+}
 #top {
+ height: auto;
   width: 100%;
-  /*border-bottom: 2px solid #F46B23;*/
   margin: auto;
+}
+#bottom {
+  width: 100%;
+  font-size: 18px;
+  margin: 30px 5px;
 }
 
-#bottom {
-  height: 70%;
-  width: 100%;
-  margin: auto;
-}
 @media screen and (min-width: 800px) {
-    #icon {display: none;}
-    .nav {height: auto; position: fixed;}
-    #navcontact, #links{ display: flex;}
-    #content{ max-width: 500px;}
+    #menu {
+      display: none;
+    }
+    .nav {
+      height: auto; 
+      position: fixed;
+    }
+    .navlist{ 
+      display: flex; 
+      max-width: 150px;
+    }
+    .navlinks{
+      padding: 18px;
+      opacity: 1;
+    }
+    #content{ 
+      max-width: 500px;
+    }
+    #top{
+      text-align: center;
+    }
+
 }
