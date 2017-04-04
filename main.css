@@ -6,7 +6,6 @@
 body{
   overflow: auto;
   font-family: 'Roboto', sans-serif;
-
 }
 a{ 
   text-decoration: none;
@@ -27,6 +26,7 @@ ul{
   z-index: 1;
   top: 0;
   left: 0;
+  box-shadow: 0px 5px 15px 2px #888888;
   background: violet;
   background: salmon;
   background: lightgreen;
@@ -47,7 +47,6 @@ ul{
   color: black;
   font-size: 20px;
   padding: 12px 8px 8px 8px;
-  /*padding: 18px;*/
   opacity: 0;
   transition: 0.3s;
 }
@@ -66,24 +65,14 @@ ul{
 }
 #menu {
   display:block;
-  /*width: 35%;*/
   list-style: none;
   padding: 12px 32px;
-}
-
-.closed{
-  overflow: hidden;
-  max-height: 10px;
-}
-.expanded{
-  /*make this the height of the largest projectdesc
-  or accept spaces in other projectdesc*/
-  max-height: 750px;
 }
 .navdown {
   height: 170px;
 }
 .title{
+  text-align: center;
   font-size: 60px;
   font-weight: 500;
   line-height: 82px;
@@ -92,57 +81,57 @@ ul{
   font-weight: 300;
   color: grey;
 }
-.projects{
+.projectlist{
   display: block;
   text-align: left;
   padding: 0;
   list-style: none;
 }
-.projectcard{
+.project{
   display: block;
   width: 100%;
-  /*padding: 10px;*/
+  margin: 30px 5px;
   border-bottom: 1px solid #000000;
 }
-.projectheader{
-  display: flex;
-  position: relative;
+
+.project a:hover{
+  color: #F46B23;;
+}
+.projecthead{
   width: 100%;
-}
-.projecttitle{
-  display: block;
   position: relative;
-  width: 100%;
-  font-weight: 500;
-  text-align: center;
+  display: inline-block;
+
 }
-.projectimage{
-  display: block;
-  position: relative;
-  margin-top: auto;
+.projecthead h4{
+  display: inline;
+  width: 50%;
 }
-.projectdesc{
-  width: 100%;
-  z-index: 1;
-  overflow: hidden;
-  padding: 5px;
-  transition: 0.7s;
+.projecthead img{
+  float: right;
+  width: 25px;
+  height: 25px;
+  right: 0;
 }
+.projectdesc, .projectdesc p{
+  padding: 10px 0;
+}
+
 #content {
   width: 90%;
   margin: auto;
   margin-top: 80px;
-  min-height: 500px;}
+  min-height: 500px;
+}
 #top {
  height: auto;
   width: 100%;
   margin: auto;
 }
 #bottom {
-  /*height: 70%;*/
   width: 100%;
   font-size: 18px;
-  margin: auto;
+  margin: 30px 5px;
 }
 
 @media screen and (min-width: 800px) {
