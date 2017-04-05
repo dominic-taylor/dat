@@ -41,10 +41,10 @@ ul{
   list-style: none;
 }
 .navlinks {
-  display: inline-block;
+  display: none;
   height: 60px;
-  text-decoration: none;
-  color: black;
+  width: 100%;
+  text-align: center;
   font-size: 20px;
   padding: 12px 8px 8px 8px;
   opacity: 0;
@@ -58,6 +58,7 @@ ul{
   padding: 16px;
 }
 .visible{
+  display: inline-block;
   opacity: 1;
 }
 .nav li:hover, li:focus {
@@ -67,9 +68,10 @@ ul{
   display:block;
   list-style: none;
   padding: 12px 32px;
+  max-width: 14px;
 }
 .navdown {
-  height: 170px;
+  height: auto;
 }
 .title{
   text-align: center;
@@ -89,7 +91,6 @@ ul{
 }
 .project{
   display: block;
-  width: 100%;
   margin: 30px 5px;
   border-bottom: 1px solid #000000;
 }
@@ -147,6 +148,7 @@ ul{
       max-width: 150px;
     }
     .navlinks{
+      display: inline-block;
       padding: 18px;
       opacity: 1;
     }
