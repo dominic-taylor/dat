@@ -41,7 +41,7 @@ ul{
   list-style: none;
 }
 .navlinks {
-  display: inline-block;
+  display: none;
   height: 60px;
   width: 100%;
   text-align: center;
@@ -58,6 +58,7 @@ ul{
   padding: 16px;
 }
 .visible{
+  display: inline-block;
   opacity: 1;
 }
 .nav li:hover, li:focus {
@@ -147,6 +148,7 @@ ul{
       max-width: 150px;
     }
     .navlinks{
+      display: inline-block;
       padding: 18px;
       opacity: 1;
     }
